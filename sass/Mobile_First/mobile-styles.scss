@@ -1,0 +1,41 @@
+@mixin fonts-settings($weight, $size, $height) {
+    font-family: 'Montserrat';
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $height;
+}
+%align-justify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header{
+    background-image: url(./img/background-header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 19px;
+    height: 542px;
+    margin-bottom: 63px;
+
+    .container{
+        max-width: 320px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+    .link{
+        display: inline-block;
+        color: white;
+        @include fonts-settings(700, 13.9859px, 17px);
+    }
+    .logo-link{
+        color: white;
+        @include fonts-settings(700, 18px, 22px);
+    }
+    .header{
+       @extend %align-justify;
+        flex-direction: column-reverse;
+        height: 173px;  
+    }
+}

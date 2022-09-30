@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
 /* MOBILE */
 *{
     box-sizing: border-box;
@@ -210,8 +213,7 @@ h1, h2, h3, p{
         max-width: 670px;
     }
     .main-content{
-        margin-top: 135px;
-        
+        margin-top: 135px; 
     }
     .main-heading{
         font-size: 52.0456px;
@@ -223,5 +225,17 @@ h1, h2, h3, p{
     .main-button{
         width: 228px;
         height: 42px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .partners {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+@media screen and (min-width: 1200px) {
+    .team {
+        height: 450px;
     }
 }
